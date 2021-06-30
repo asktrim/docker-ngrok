@@ -19,9 +19,10 @@ RUN set -x \
  && apk add --no-cache curl \
  && APKARCH="$(apk --print-arch)" \
  && case "$APKARCH" in \
-      armhf)   NGROKARCH="arm" ;; \ 
+      armhf)   NGROKARCH="arm" ;; \
       armv7)   NGROKARCH="arm" ;; \
       armel)   NGROKARCH="arm" ;; \
+      aarch64) NGROKARCH="arm64" ;; \
       x86)     NGROKARCH="386" ;; \
       x86_64)  NGROKARCH="amd64" ;; \
     esac \
