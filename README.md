@@ -1,5 +1,16 @@
 [![Docker repository](https://img.shields.io/docker/automated/wernight/ngrok.svg)](https://hub.docker.com/r/wernight/ngrok/) [![Build passing](https://img.shields.io/docker/build/wernight/ngrok.svg)](https://hub.docker.com/r/wernight/ngrok/)
 
+# ASKTRIM FORK
+
+This fork adds support for arm (Mac m1), and adds a github workflow config to build for multiple architectures.
+
+*To install*
+Clone this repo and build it locally to override the public release:
+```bash
+$ cd docker-ngrok
+$ docker build -t wernight/ngrok:latest .
+```
+
 # Supported tags and respective `Dockerfile` links
 
   * [`latest`](https://github.com/wernight/docker-ngrok/blob/master/Dockerfile) [![](https://images.microbadger.com/badges/image/wernight/ngrok.svg)](http://microbadger.com/images/wernight/ngrok "Get your own image badge on microbadger.com")
